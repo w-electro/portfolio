@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>وليد العودة — ملف الأعمال</title>
+<meta name="description" content="وليد العودة — مهندس برمجيات وذكاء اصطناعي يضع العربية أولًا، من حائل. أكثر من 30 مشروعًا، و3 أنظمة تعمل في بيئة الإنتاج.">
+<meta name="author" content="Waleed AlOudah">
+<link rel="canonical" href="https://w-electro.github.io/portfolio/ar/">
+<link rel="alternate" hreflang="en" href="https://w-electro.github.io/portfolio/">
+<link rel="alternate" hreflang="ar" href="https://w-electro.github.io/portfolio/ar/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="وليد العودة — ملف الأعمال">
+<meta property="og:description" content="وليد العودة — مهندس برمجيات وذكاء اصطناعي يضع العربية أولًا، من حائل. أكثر من 30 مشروعًا، و3 أنظمة تعمل في بيئة الإنتاج.">
+<meta property="og:url" content="https://w-electro.github.io/portfolio/ar/">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="وليد العودة — ملف الأعمال">
+<meta name="twitter:description" content="وليد العودة — مهندس برمجيات وذكاء اصطناعي يضع العربية أولًا، من حائل. أكثر من 30 مشروعًا، و3 أنظمة تعمل في بيئة الإنتاج.">
+<meta name="theme-color" content="#0C0B09">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M10 30 A14 14 0 0 1 38 30' fill='none' stroke='%23D4A843' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='6' y1='30' x2='42' y2='30' stroke='%23D4A843' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ink:#FBF8F1; --surface:#FFFFFF; --edge:#E4DCCB; --edge-soft:#EFE8DA;
+    --gold:#9A6E14; --gold-soft:#C9A24B; --text:#211D16; --dim:#6B6252;
+    --live:#2E6B42; --live-bg:#E4EFE6;
+    --built:#8A5A12; --built-bg:#F6EBD7;
+    --proto:#5A5647; --proto-bg:#EDE9DE;
+    --display:"Noto Kufi Arabic","IBM Plex Sans Arabic",sans-serif;
+    --body:"IBM Plex Sans Arabic","Noto Kufi Arabic",sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ink:#0C0B09; --surface:#15130E; --edge:#2A251A; --edge-soft:#211D15;
+      --gold:#D4A843; --gold-soft:#8A7433; --text:#EDE6D6; --dim:#9B927D;
+      --live:#7FC79A; --live-bg:#16281C;
+      --built:#D9A94F; --built-bg:#2A2013;
+      --proto:#9B927D; --proto-bg:#211E18;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#0C0B09; --surface:#15130E; --edge:#2A251A; --edge-soft:#211D15;
+    --gold:#D4A843; --gold-soft:#8A7433; --text:#EDE6D6; --dim:#9B927D;
+    --live:#7FC79A; --live-bg:#16281C;
+    --built:#D9A94F; --built-bg:#2A2013;
+    --proto:#9B927D; --proto-bg:#211E18;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--ink); color:var(--text);
+    font-family:var(--body); font-size:16px; line-height:1.85;
+    margin:0; padding-block:0 4rem; padding-left:20px; padding-right:20px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:62rem;margin:0 auto}
+
+  header.top{padding-block:3.5rem 2rem;border-bottom:1px solid var(--edge)}
+  .eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;color:var(--gold);margin:0 0 1rem;direction:rtl}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(2.2rem,6.5vw,3.5rem);line-height:1.25;margin:0 0 .5rem;text-wrap:balance}
+  .sub{font-family:var(--display);font-weight:400;font-size:clamp(1.05rem,2.9vw,1.35rem);color:var(--gold);margin:0 0 1.5rem;line-height:1.7}
+  .lede{font-size:1.02rem;max-width:46rem;margin:0}
+  .lede b{font-weight:600}
+  .meta{font-family:var(--mono);font-size:.8rem;color:var(--dim);margin-top:1.4rem;display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;direction:ltr;justify-content:flex-end}
+  .meta a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-soft)}
+  .meta a:hover{color:var(--text)}
+
+  .counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));gap:1px;background:var(--edge);border:1px solid var(--edge);margin-top:2.5rem}
+  .count{background:var(--ink);padding:1.1rem 1rem}
+  .count .n{font-family:var(--mono);font-size:1.6rem;font-weight:500;color:var(--gold);font-variant-numeric:tabular-nums;display:block;line-height:1.1;direction:ltr}
+  .count .l{font-size:.8rem;color:var(--dim);margin-top:.35rem;display:block;line-height:1.5}
+
+  section{padding-block:3.2rem 0}
+  h2{font-family:var(--display);font-weight:700;font-size:1.5rem;margin:0 0 .4rem;line-height:1.5}
+  .sec-note{color:var(--dim);font-size:.94rem;margin:0 0 1.8rem;max-width:47rem}
+
+  .caps{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1px;background:var(--edge);border:1px solid var(--edge)}
+  .cap{background:var(--ink);padding:1.25rem 1.2rem 1.35rem}
+  .cap h3{font-family:var(--display);font-size:.92rem;font-weight:600;color:var(--gold);margin:0 0 .4rem;line-height:1.6}
+  .cap .proof{font-size:.86rem;color:var(--dim);margin:0 0 .9rem;line-height:1.7}
+  .pills{display:flex;flex-wrap:wrap;gap:.35rem}
+  .pill{font-family:var(--mono);font-size:.72rem;padding:.22rem .5rem;border:1px solid var(--edge);color:var(--text);border-radius:2px;background:var(--surface);direction:ltr}
+
+  .proj{border-top:1px solid var(--edge);padding-block:1.7rem;display:grid;gap:.75rem}
+  .proj:last-child{border-bottom:1px solid var(--edge)}
+  .phead{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem}
+  .pname{font-family:var(--display);font-weight:700;font-size:1.22rem;line-height:1.5}
+  .pen{font-family:var(--mono);font-size:.85rem;color:var(--dim);direction:ltr}
+  .chip{font-family:var(--body);font-size:.72rem;font-weight:600;padding:.18rem .55rem;border-radius:2px;white-space:nowrap}
+  .c-live{color:var(--live);background:var(--live-bg)}
+  .c-built{color:var(--built);background:var(--built-bg)}
+  .c-proto{color:var(--proto);background:var(--proto-bg)}
+  .pdesc{margin:0;max-width:48rem}
+  .pwhy{margin:0;max-width:48rem;color:var(--dim);font-size:.95rem}
+  .pwhy b{color:var(--text);font-weight:600}
+  .eviden{font-family:var(--mono);font-size:.76rem;color:var(--dim);display:flex;flex-wrap:wrap;gap:.35rem 1rem;font-variant-numeric:tabular-nums;direction:ltr;justify-content:flex-end}
+  .plink{font-family:var(--mono);font-size:.8rem;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-soft);justify-self:start;direction:ltr}
+  .plink:hover{color:var(--text)}
+
+  .tl{position:relative;margin-top:.5rem;padding-right:1.6rem}
+  .tl::before{content:"";position:absolute;right:.32rem;top:.55rem;bottom:.55rem;width:1px;background:var(--edge)}
+  .tlrow{position:relative;padding-block:.8rem;display:grid;grid-template-columns:8.5rem 1fr;gap:.2rem 1.1rem}
+  .tlrow::before{content:"";position:absolute;right:-1.6rem;top:1.35rem;width:.66rem;height:.66rem;border-radius:50%;background:var(--ink);border:1.5px solid var(--gold-soft)}
+  .tlrow.key::before{background:var(--gold);border-color:var(--gold)}
+  .tldate{font-family:var(--mono);font-size:.76rem;color:var(--gold);padding-top:.35rem;direction:ltr;text-align:right}
+  .tltext{font-size:.96rem}
+  .tltext b{font-weight:600}
+  .tltext span{color:var(--dim)}
+  @media(max-width:32rem){.tlrow{grid-template-columns:1fr}.tldate{text-align:right}}
+
+  .also{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.4rem 2rem;border-top:1px solid var(--edge);padding-top:1.7rem}
+  .also .an{font-weight:600;font-size:1rem;font-family:var(--display)}
+  .also .ad{color:var(--dim);font-size:.9rem;margin-top:.2rem;line-height:1.7}
+
+  footer{border-top:1px solid var(--edge);margin-top:3.5rem;padding-top:1.6rem;font-family:var(--mono);font-size:.8rem;color:var(--dim);display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;direction:ltr;justify-content:flex-end}
+  footer a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-soft)}
+  footer a:hover{color:var(--text)}
+  a:focus-visible,.plink:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+  .langswitch{font-family:var(--mono);font-size:.78rem;margin-bottom:1rem}
+  .langswitch a{color:var(--gold);text-decoration:none;border:1px solid var(--edge);padding:.25rem .7rem;border-radius:2px}
+  .langswitch a:hover{border-color:var(--gold-soft);color:var(--text)}
+</style>
+
+<div class="wrap" dir="rtl" lang="ar">
+
+  <header class="top">
+    <p class="langswitch"><a href="../">English</a></p>
+    <p class="eyebrow">سجل أعمال · حائل، المملكة العربية السعودية · سبتمبر 2026</p>
+    <h1>وليد العودة</h1>
+    <p class="sub">مطوّر برمجيات متكامل. أبني برمجيات تضع العربية أولًا، من الفكرة حتى التشغيل.</p>
+    <p class="lede">
+      خريج إدارة أعمال — تخصص محاسبة، ديسمبر 2024. بلا خلفية أكاديمية في علوم الحاسب.
+      أصمّم وأبرمج وأنشر وأشغّل بمفردي أنظمة تعمل في بيئة الإنتاج: الويب، تطبيقات الجوال، تطبيقات سطح
+      المكتب، بوابات الدفع، والذكاء الاصطناعي.
+      <b>جرى التحقق من عمل جميع الروابط الواردة في هذه الصفحة بتاريخ 22 سبتمبر 2026.</b>
+    </p>
+    <p class="meta">
+      <a href="https://latana.sa">latana.sa</a>
+      <a href="https://w-electro.github.io">w-electro.github.io</a>
+      <a href="https://github.com/w-electro">github.com/w-electro</a>
+      <span>mrwaleed0f88@gmail.com</span>
+    </p>
+
+    <div class="counts">
+      <div class="count"><span class="n">+30</span><span class="l">مشروعًا مُنفّذًا</span></div>
+      <div class="count"><span class="n">3</span><span class="l">أنظمة تعمل في بيئة الإنتاج</span></div>
+      <div class="count"><span class="n">+200 ألف</span><span class="l">سطر برمجي</span></div>
+      <div class="count"><span class="n">18</span><span class="l">شهرًا من التعلّم الذاتي</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>أنظمة تعمل الآن في بيئة الإنتاج</h2>
+    <p class="sec-note">يمكن لأي شخص الوصول إليها في هذه اللحظة. وأحدها يستقبل مدفوعات فعلية.</p>
+
+    <div class="proj">
+      <div class="phead">
+        <span class="pname">لاتانا</span><span class="pen">La'Tana</span>
+        <span class="chip c-live">يعمل الآن · يستقبل الطلبات</span>
+      </div>
+      <p class="pdesc">
+        منصة تسويق خدمات الضيافة والبوفيهات في حائل. يحجز العميل مناسبته عبر مسار من ست خطوات،
+        وتنضم مؤسسات الضيافة المستقلة إليها بصفة شركاء، بينما تتولى هي التعامل مع العميل والدفع والجدولة
+        مقابل عمولة على كل طلب.
+      </p>
+      <p class="pwhy">
+        <b>الجزء الصعب:</b> ثلاث بوابات دفع تعمل فعليًا — «ميسر» لبطاقات مدى وآبل باي، و«تابي»
+        و«تمارا» للتقسيط — مع دورة كاملة من التفويض إلى التحصيل فالتسوية. المتطلبات النظامية
+        السعودية مضمَّنة في صميم قاعدة البيانات لا مضافة إليها لاحقًا: تقسيم عمولات الشركاء والتسوية عبر
+        الآيبان، والتحقق من رخصة «بلدي» ومستندات الدفاع المدني، وحقول الإفصاح المطلوبة من وزارة
+        التجارة لوسطاء التجارة الإلكترونية.
+      </p>
+      <div class="eviden">
+        <span>570 commits</span><span>~32,000 lines</span><span>Apr–Aug 2026</span>
+        <span>25 migrations</span><span>707 users / 4,306 events</span>
+      </div>
+      <a class="plink" href="https://latana.sa">latana.sa ←</a>
+    </div>
+
+    <div class="proj">
+      <div class="phead">
+        <span class="pname">أثر</span><span class="pen">Athr</span>
+        <span class="chip c-live">يعمل الآن</span>
+      </div>
+      <p class="pdesc">
+        دليل تراثي ذكي لمنطقة حائل. يوجّه الزائر كاميرا جواله نحو نقش صخري أو مبنى تاريخي، فيتعرّف
+        التطبيق على الموقع، ويروي قصته بتسع وعشرين لغة، ثم يبني له مسارًا سياحيًا يراعي حالة الطقس.
+      </p>
+      <p class="pwhy">
+        <b>الجزء الصعب:</b> التعرّف البصري يعمل بالكامل داخل متصفح الزائر — متجهات تمثيل (embeddings) من نموذج
+        DINOv3 بصيغة ONNX، تُطابَق مع فهرس مرجعي مُعدّ مسبقًا باستخدام تشابه جيب التمام (cosine similarity). اخترتُ المطابقة بالمتجهات
+        بدل تدريب مصنِّف (classifier) عن قصد، حتى تكون إضافة موقع جديد مجرد إضافة صور لا إعادة تدريب نموذج.
+        وعتبة القبول لم تُقدَّر تخمينًا، بل قيست على 198 صورة مطابقة و53 صورة غير مطابقة، مع فحصٍ لبصمة
+        النموذج يرفض أي فهرس غير متوافق بدل أن يعطي نتائج خاطئة بصمت. بلا خادم، وبلا تكلفة لكل مستخدم.
+      </p>
+      <div class="eviden">
+        <span>44 commits</span><span>~10,000 lines</span><span>29 locales</span>
+        <span>12 test suites</span><span>Sept 2026</span>
+      </div>
+      <a class="plink" href="https://w-electro.github.io/athr/">w-electro.github.io/athr ←</a>
+    </div>
+
+    <div class="proj">
+      <div class="phead">
+        <span class="pname">و. للخدمات الإلكترونية</span><span class="pen">W For Electronic Services</span>
+        <span class="chip c-live">يعمل الآن</span>
+      </div>
+      <p class="pdesc">
+        منصة خدمات طلابية وتجارية بالعربية — مشاريع تخرّج وعروض تقديمية وأعمال برمجية — تتصدّرها
+        خمس عشرة أداة مجانية في المتصفح (استخراج نص من الصور، دمج ملفات PDF وتقسيمها، توليد رموز QR
+        والباركود، إزالة الخلفيات) تعمل قناةً لاستقطاب العملاء.
+      </p>
+      <p class="pwhy">
+        <b>الجزء الصعب:</b> الاستمرارية. ثمانية أشهر من العمل المتواصل بمنهجية فروع وطلبات دمج
+        حقيقية، مع معالجة سليمة للاتجاه من اليمين إلى اليسار وتحسين الظهور في محركات البحث بالعربية،
+        وانتقال تدريجي من صفحات ثابتة مكتوبة يدويًا إلى منصة مبنية على Next.js وSupabase. وتضم
+        أيضًا نظام طلبات يعمل فعليًا في أحد المقاهي بشاشتين منفصلتين: واحدة للعميل وأخرى للباريستا.
+      </p>
+      <div class="eviden">
+        <span>334 commits</span><span>~54,000 lines</span><span>156 files</span>
+        <span>+100 merged PRs</span><span>Apr–Dec 2025</span>
+      </div>
+      <a class="plink" href="https://w-electro.github.io">w-electro.github.io ←</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>ما الذي أستطيع بناءه</h2>
+    <p class="sec-note">
+      كل بند مسنود بعمل مُنفَّذ لا بشهادة دورة. ويوضّح السطر الصغير تحت كل بند أين استُخدم فعليًا.
+    </p>
+    <div class="caps">
+      <div class="cap">
+        <h3>تطبيقات الويب</h3>
+        <p class="proof">ثلاثة مواقع تعمل الآن، نحو 86 ألف سطر، بمعالجة كاملة للعربية وللاتجاه من اليمين إلى اليسار.</p>
+        <div class="pills"><span class="pill">TypeScript</span><span class="pill">React</span><span class="pill">Next.js</span><span class="pill">Vite</span><span class="pill">Tailwind</span><span class="pill">PWA</span><span class="pill">Service workers</span></div>
+      </div>
+      <div class="cap">
+        <h3>الخوادم وقواعد البيانات</h3>
+        <p class="proof">واجهات برمجية تعمل في بيئة الإنتاج، ومخططات قواعد بيانات بحجم 36 جدولًا و8 جداول، صُمّمت ونُفِّذت عمليات ترحيلها.</p>
+        <div class="pills"><span class="pill">Node / Express</span><span class="pill">FastAPI</span><span class="pill">Python</span><span class="pill">PostgreSQL</span><span class="pill">Supabase</span><span class="pill">Prisma</span><span class="pill">Redis</span><span class="pill">Docker</span></div>
+      </div>
+      <div class="cap">
+        <h3>المدفوعات والامتثال السعودي</h3>
+        <p class="proof">أموال حقيقية عبر ثلاث بوابات، والمتطلبات النظامية مضمَّنة في صميم قاعدة البيانات.</p>
+        <div class="pills"><span class="pill">Moyasar</span><span class="pill">Tabby</span><span class="pill">Tamara</span><span class="pill">Stripe</span><span class="pill">Authorise / capture</span><span class="pill">IBAN splits</span><span class="pill">بلدي</span><span class="pill">إفصاح وزارة التجارة</span></div>
+      </div>
+      <div class="cap">
+        <h3>هندسة الذكاء الاصطناعي</h3>
+        <p class="proof">نماذج بصرية داخل المتصفح، واستخراج بيانات من وثائق تعود إلى خمس سنوات بدمج OCR مع نماذج لغوية.</p>
+        <div class="pills"><span class="pill">Anthropic API</span><span class="pill">OpenAI API</span><span class="pill">ONNX</span><span class="pill">Transformers.js</span><span class="pill">RAG</span><span class="pill">Google Vision</span><span class="pill">Structured extraction</span></div>
+      </div>
+      <div class="cap">
+        <h3>الجوال وسطح المكتب</h3>
+        <p class="proof">تطبيق أندرويد أصلي، وتسعة إصدارات موقّعة لسطح المكتب مع نظام تحديث تلقائي.</p>
+        <div class="pills"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">React Native</span><span class="pill">Expo</span><span class="pill">Electron</span><span class="pill">WebRTC</span><span class="pill">PyInstaller</span></div>
+      </div>
+      <div class="cap">
+        <h3>هندسة تضع العربية أولًا</h3>
+        <p class="proof">التخصص الفعلي: واجهات RTL، واستخراج النص العربي، وتوحيد التواريخ والبيانات المحاسبية العربية.</p>
+        <div class="pills"><span class="pill">واجهات RTL</span><span class="pill">OCR عربي</span><span class="pill">تواريخ بأرقام عربية</span><span class="pill">فصحى + لهجة نجدية</span><span class="pill">محتوى ثنائي اللغة</span><span class="pill">SEO عربي</span></div>
+      </div>
+      <div class="cap">
+        <h3>الأتمتة ومعالجة الوثائق</h3>
+        <p class="proof">أرشيف عقود يمتد خمس سنوات، ممسوح ضوئيًا، تحوّل إلى مجموعة بيانات واحدة منظمة.</p>
+        <div class="pills"><span class="pill">Power Query / M</span><span class="pill">أتمتة Excel</span><span class="pill">pandas</span><span class="pill">openpyxl</span><span class="pill">معالجة PDF</span><span class="pill">OCR بالدفعات</span></div>
+      </div>
+      <div class="cap">
+        <h3>التحليل الكمّي</h3>
+        <p class="proof">محرك تداول قائم على أسس إحصائية حقيقية — في مرحلة تجريبية، ودون أي ادعاء بتحقيق عائد.</p>
+        <div class="pills"><span class="pill">NumPy / pandas</span><span class="pill">statsmodels</span><span class="pill">Hurst</span><span class="pill">ADF</span><span class="pill">Ornstein-Uhlenbeck</span><span class="pill">Kelly sizing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>خبرة مهنية — لدنك العالمية</h2>
+    <p class="sec-note">
+      عملتُ محاسبًا من يوليو إلى نوفمبر 2025، وبنيتُ ما يلي دون أن يُطلب مني ذلك، وخارج نطاق وصفي
+      الوظيفي تمامًا. بيانات الشركة وعملائها سرّية ولا يظهر منها شيء في هذه الصفحة.
+    </p>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">نظام رقمنة العقود العربية</span><span class="chip c-built">يعمل داخليًا</span></div>
+      <p class="pdesc">
+        أرشيف عقود يمتد خمس سنوات، ممسوح ضوئيًا، تحوّل إلى مجموعة بيانات واحدة منظمة.
+        ثلاث مراحل: استخراج النص عبر Google Cloud Vision من صفحات PDF، ثم استخراج مُهيكل بواسطة
+        نموذج لغوي، ثم توليد ملفات Excel بمعادلات مرتبطة وتنسيق عربي.
+      </p>
+      <p class="pwhy">
+        <b>الفكرة التي جعلته يعمل:</b> العقد ليس صفًا واحدًا، بل يتمدّد كحاصل ضرب بنود التوريد في
+        دفعات السداد — صنفان على ست دفعات يساويان اثني عشر صفًا لا صفًا واحدًا. أي استخراج مباشر وسطحي
+        يخطئ في هذه النقطة تحديدًا، فتفسد كل الإجماليات بعدها. كما تصحّح مرحلة الاستخراج أخطاء
+        التعرّف الضوئي في النص العربي، وتوحّد صيغ أرقام العقود، وتطابق الأصناف مع تصنيف مرجعي،
+        وترفض أي نتيجة لا يبلغ مجموع نسب الدفعات فيها 100%.
+      </p>
+      <div class="eviden">
+        <span>134 PDFs</span><span>100 contracts structured (from 23 manual)</span>
+        <span>34 companies · 38 projects</span>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">محرك أعمار الذمم المدينة</span><span class="chip c-built">يعمل داخليًا</span></div>
+      <p class="pdesc">
+        محرك بلغة Power Query يستورد مجلدًا كاملًا من ملفات CSV العربية وينتج تحليل أعمار الذمم
+        على مستوى حسابات العملاء.
+      </p>
+      <p class="pwhy">
+        <b>لماذا لا تنتجه أداة جاهزة:</b> نحو 54 ألف حرف من كود M مكتوب يدويًا. يصنّف المحرك كل سطر حسب
+        نوعه، ويقرأ التواريخ بالأرقام العربية عبر عدة صيغ غير متسقة، ويفصل بين أرقام المستندات
+        والأرصدة الجارية والمبالغ الفعلية بحسب نوع الحركة، مع رصد الأخطاء لكل سطر
+        على حدة.
+      </p>
+      <div class="eviden"><span>~54,000 chars of M</span><span>22 worksheets</span></div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">معالج المخزون</span><span class="chip c-built">تطبيق سطح مكتب مُسلَّم</span></div>
+      <p class="pdesc">
+        تطبيق Electron يقرأ جداول المخزون من ملفات Word، ويصنّف المواد، وينفّذ خوارزمية توزيع
+        الألواح على الأبواب مع عرض تفصيلي للنتيجة. وحُزِم في ملف تنفيذي يُثبَّت على ويندوز،
+        إلى جانب حاسبة أبواب مرافقة.
+      </p>
+      <div class="eviden"><span>Electron + electron-builder</span><span>Shipped as .exe</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>أنظمة مكتملة لم تُطرح بعد</h2>
+    <p class="sec-note">
+      أنظمة حقيقية تعمل لكنها لم تُطرح للمستخدمين — أذكر ذلك صراحةً، لأن بعض أقوى الأعمال الهندسية
+      هنا موجود في هذه القائمة تحديدًا.
+    </p>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">Rally</span><span class="chip c-built">9 إصدارات مبنية</span></div>
+      <p class="pdesc">
+        تطبيق سطح مكتب لمجتمعات اللاعبين — خوادم وقنوات صوتية، ومحتوى، وبث مباشر، ونقاط تفاعل،
+        ومتجر — سُلِّم في صورة تطبيق ويندوز.
+      </p>
+      <p class="pwhy">
+        <b>الجزء النادر:</b> تسعة مثبّتات موقّعة ومتسلسلة من الإصدار 1.0.0 حتى 1.6.1 مع نظام تحديث
+        تلقائي يعمل. معظم المشاريع لا تصل إلى إصدار ثانٍ أصلًا، لأن بناء خط الإصدار عمل غير مرئي
+        لا يناله تقدير يُذكر. والطبقة الصوتية شبكة WebRTC مكتوبة يدويًا مع خاصية الضغط للتحدث وتموضع
+        صوتي، لا حزمة جاهزة. أُنجز خلال ثلاثة عشر يومًا.
+      </p>
+      <div class="eviden">
+        <span>124 commits / 13 days</span><span>~26,800 lines</span><span>36-model schema</span>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">نجاح</span><span class="pen">Najah</span><span class="chip c-built">نسخة الويب تعمل · نسخة أندرويد تجريبية</span></div>
+      <p class="pdesc">
+        منصة خدمات طلابية سعودية بمعلّم ذكي يضع العربية أولًا، ونحو ستين أداة في المتصفح، مبنية
+        مرتين: مرةً تطبيقَ ويب بـ Next.js ومرةً تطبيقًا أصليًا لأندرويد — مع خدمة OCR منفصلة بلغة Python خلفهما.
+      </p>
+      <p class="pwhy">
+        <b>تفكير في المنتج لا مجرد واجهة:</b> تعليمات المعلّم الذكي مضبوطة على السياق التعليمي السعودي:
+        عربية فصحى مع فهم اللهجة النجدية، وإخراج المعادلات الرياضية بصيغة LaTeX، ورفض صريح
+        لكتابة واجبات الطالب نيابةً عنه.
+      </p>
+      <div class="eviden">
+        <span>~27,000 lines</span><span>15,385 TS · 11,710 Kotlin</span><span>Flask + Google Vision</span>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">KAWI</span><span class="chip c-proto">مرحلة تجريبية</span></div>
+      <p class="pdesc">
+        محرك تداول خوارزمي متوافق مع الضوابط الشرعية، للسوق المالية السعودية (تداول) والأسهم الأمريكية، بخدمة خلفية
+        FastAPI ولوحة تحكم React.
+      </p>
+      <p class="pwhy">
+        <b>الإحصاءات حقيقية، أما السجل فلا.</b> يعتمد منطق العودة إلى المتوسط على أُس هيرست واختبار
+        ADF للاستقرارية وتقدير نصف عمر الارتداد وفق نموذج أورنشتاين-أولنبيك، مع تحديد أحجام المراكز بمعيار كيلي، ومحرك قواعد
+        فعلي للفرز الشرعي — حدود نسبة الدين إلى الأصول، واستبعاد القطاعات، ومنع عقود المقايضة،
+        وحد أدنى لمدة الاحتفاظ. لم يتداول فعليًا قط، ولا توجد نتائج اختبار رجعي، ولذلك لا يُذكر
+        أي رقم عائد.
+      </p>
+      <div class="eviden"><span>~13,700 lines</span><span>Python + FastAPI + React</span><span>IB API</span></div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">Responza</span><span class="chip c-built">الخدمة الخلفية مكتملة</span></div>
+      <p class="pdesc">
+        خدمة خلفية لمنصة خدمة عملاء تعمل بالذكاء الاصطناعي عبر قنوات متعددة، موجّهة للمدارس والمنشآت الصغيرة
+        السعودية — محادثة ويب وواتساب، مع قاعدة معرفة مستقلة لكل جهة.
+      </p>
+      <p class="pwhy">
+        <b>مبنيّ على واجهة المنصة الفعلية لا على محاكاة لها:</b> يتصل مباشرة بواجهة Meta Graph، مع خدمات مخصصة لاعتماد
+        قوالب واتساب وحدود معدل الإرسال — وهي قيود لا يعالجها إلا من قرأ شروط المنصة فعلًا.
+        يعتمد على توليد معزَّز بالاسترجاع (RAG) مع درجة ثقة لكل إجابة، وتبديل تلقائي بين مزوّدي النماذج عند الإخفاق. لم يُنشر
+        في بيئة إنتاج.
+      </p>
+      <div class="eviden"><span>~4,500 lines TS</span><span>Prisma + Postgres + Redis</span><span>Docker</span></div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">منصة دراسة FHIR</span><span class="chip c-proto">الأسابيع 1–4 مكتملة</span></div>
+      <p class="pdesc">
+        تطبيق منهج دراسي ثنائي اللغة من ستة وعشرين أسبوعًا، بنيتُه من الصفر لأعلّم نفسي معيار
+        التشغيل البيني الصحي HL7 FHIR إلى مستوى الشهادة الاحترافية.
+      </p>
+      <p class="pwhy">
+        <b>توضيحًا:</b> هذا دليل على دراسة المجال، لا على خبرة تطبيقية في تنفيذ FHIR. الأسابيع
+        المكتملة تغطي البنية المفاهيمية للمعيار ومبادئ REST ودلالات موارد الأدوية. وما بعدها
+        لم يُكتب بعد.
+      </p>
+      <div class="eviden"><span>Offline-capable · AR + EN</span><span>Python content pipeline</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>كيف وصلتُ إلى هنا</h2>
+    <p class="sec-note">ثمانية عشر شهرًا، مرتّبة زمنيًا.</p>
+    <div class="tl">
+      <div class="tlrow key">
+        <div class="tldate">Dec 2024</div>
+        <div class="tltext"><b>التخرّج</b> — إدارة أعمال، تخصص محاسبة، جامعة حائل. <span>بلا أي خلفية برمجية في تلك المرحلة.</span></div>
+      </div>
+      <div class="tlrow">
+        <div class="tldate">Apr 2025</div>
+        <div class="tltext"><b>أول سطر برمجي.</b> <span>بدأتُ «و. للخدمات الإلكترونية» — صفحات عربية ثابتة وأدوات مجانية، وتعلّمتُ بالبناء أمام الناس ونشر كل ما أنجزه.</span></div>
+      </div>
+      <div class="tlrow key">
+        <div class="tldate">Jul–Nov 2025</div>
+        <div class="tltext"><b>محاسب في لدنك العالمية.</b> <span>بنيتُ نظام رقمنة العقود، ومحرك أعمار الذمم، وأداتَين لسطح المكتب — ولا شيء منها ضمن وصفي الوظيفي. غادرتُ حين اتضح حدّ ما يمكن بلوغه هناك.</span></div>
+      </div>
+      <div class="tlrow">
+        <div class="tldate">Nov–Dec 2025</div>
+        <div class="tltext"><b>التعمّق.</b> <span>محرك KAWI الكمّي، ومنصة «نجاح» على الويب والأندرويد، ومنهج FHIR — تعلّمت التشغيل البيني الصحي ببناء الدورة التي أردتُ حضورها.</span></div>
+      </div>
+      <div class="tlrow">
+        <div class="tldate">Feb 2026</div>
+        <div class="tltext"><b>Rally.</b> <span>124 commit وتسعة إصدارات موقّعة لسطح المكتب خلال ثلاثة عشر يومًا.</span></div>
+      </div>
+      <div class="tlrow key">
+        <div class="tldate">Apr–Aug 2026</div>
+        <div class="tltext"><b>إطلاق لاتانا.</b> <span>570 commit. عملاء حقيقيون، ومدفوعات فعلية عبر ثلاث بوابات، وسوق شركاء بتسوية عمولات.</span></div>
+      </div>
+      <div class="tlrow key">
+        <div class="tldate">Sept 2026</div>
+        <div class="tltext"><b>أثر.</b> <span>نموذج بصري يعمل داخل المتصفح، يروي تراث حائل بتسع وعشرين لغة. بُني لهاكاثون أجا للذكاء الاصطناعي.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>أعمال أخرى</h2>
+    <p class="sec-note">أصغر حجمًا أو أقدم زمنًا، وتتفاوت في درجة اكتمالها.</p>
+    <div class="also">
+      <div><div class="an">Latana-ios</div><div class="ad">تطبيق جوال أصلي بـ Expo يتصل بواجهة لاتانا البرمجية الفعلية. مسار الاستخدام مكتمل، لكنه لم يُقدَّم للمتاجر.</div></div>
+      <div><div class="an">اختلفنا</div><div class="ad">لعبة استنتاج اجتماعي عربية آنية، بحلقة لعب كاملة مكتوبة من الصفر على WebSocket.</div></div>
+      <div><div class="an">شاي سكر</div><div class="ad">قائمة طلبات برمز QR ولوحة طلبات فورية للباريستا، لمحل شاي في حائل.</div></div>
+      <div><div class="an">مراقب المالية</div><div class="ad">يراقب مجلد ملفات Excel ويحدّث التحليلات تلقائيًا، مع ترجمة عناوين الأعمدة المحاسبية العربية. سُلِّم في صورة ملف تنفيذي.</div></div>
+      <div><div class="an">Flow</div><div class="ad">خط إنتاج كتب إلكترونية عربية — من التوليد إلى الإخراج وأغلفة الكتب. أنتج 95 ملف PDF.</div></div>
+      <div><div class="an">باحث المنشآت</div><div class="ad">أداة FastAPI لتتبع عملاء محتملين من المنشآت الصغيرة. نظام المتابعة يعمل، أما طبقة جمع البيانات فلا.</div></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Waleed AlOudah · Ha'il, Saudi Arabia</span>
+    <a href="https://github.com/w-electro">github.com/w-electro</a>
+    <a href="https://latana.sa">latana.sa</a>
+    <span>mrwaleed0f88@gmail.com</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

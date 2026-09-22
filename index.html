@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Waleed AlOudah — Build Record</title>
+<meta name="description" content="Waleed AlOudah — Arabic-first AI and software engineer in Ha'il, Saudi Arabia. 30+ projects, 3 live in production, 200,000+ lines. Every claim checkable against source.">
+<meta name="author" content="Waleed AlOudah">
+<link rel="canonical" href="https://w-electro.github.io/portfolio/">
+<link rel="alternate" hreflang="ar" href="https://w-electro.github.io/portfolio/ar/">
+<link rel="alternate" hreflang="en" href="https://w-electro.github.io/portfolio/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Waleed AlOudah — Build Record">
+<meta property="og:description" content="Waleed AlOudah — Arabic-first AI and software engineer in Ha'il, Saudi Arabia. 30+ projects, 3 live in production, 200,000+ lines. Every claim checkable against source.">
+<meta property="og:url" content="https://w-electro.github.io/portfolio/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Waleed AlOudah — Build Record">
+<meta name="twitter:description" content="Waleed AlOudah — Arabic-first AI and software engineer in Ha'il, Saudi Arabia. 30+ projects, 3 live in production, 200,000+ lines. Every claim checkable against source.">
+<meta name="theme-color" content="#0C0B09">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M10 30 A14 14 0 0 1 38 30' fill='none' stroke='%23D4A843' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='6' y1='30' x2='42' y2='30' stroke='%23D4A843' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<style>
+  :root{
+    --ink:#FBF8F1; --surface:#FFFFFF; --edge:#E4DCCB; --edge-soft:#EFE8DA;
+    --gold:#9A6E14; --gold-soft:#C9A24B; --text:#211D16; --dim:#6B6252;
+    --live:#2E6B42; --live-bg:#E4EFE6;
+    --built:#8A5A12; --built-bg:#F6EBD7;
+    --proto:#5A5647; --proto-bg:#EDE9DE;
+    --display:"Fraunces",Georgia,"Times New Roman",serif;
+    --body:"IBM Plex Sans",-apple-system,system-ui,Segoe UI,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --ar:"IBM Plex Sans Arabic","Noto Kufi Arabic",sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ink:#0C0B09; --surface:#15130E; --edge:#2A251A; --edge-soft:#211D15;
+      --gold:#D4A843; --gold-soft:#8A7433; --text:#EDE6D6; --dim:#9B927D;
+      --live:#7FC79A; --live-bg:#16281C;
+      --built:#D9A94F; --built-bg:#2A2013;
+      --proto:#9B927D; --proto-bg:#211E18;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#0C0B09; --surface:#15130E; --edge:#2A251A; --edge-soft:#211D15;
+    --gold:#D4A843; --gold-soft:#8A7433; --text:#EDE6D6; --dim:#9B927D;
+    --live:#7FC79A; --live-bg:#16281C;
+    --built:#D9A94F; --built-bg:#2A2013;
+    --proto:#9B927D; --proto-bg:#211E18;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--ink); color:var(--text);
+    font-family:var(--body); font-size:16px; line-height:1.6;
+    margin:0; padding-block:0 4rem; padding-left:20px; padding-right:20px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:62rem;margin:0 auto}
+
+  header.top{padding-block:3.5rem 2rem;border-bottom:1px solid var(--edge)}
+  .eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 1rem}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(2.4rem,7vw,3.9rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 .3rem;text-wrap:balance}
+  .sub{font-family:var(--display);font-weight:400;font-style:italic;font-size:clamp(1.1rem,3vw,1.45rem);color:var(--gold);margin:0 0 1.5rem}
+  .lede{font-size:1.05rem;max-width:46rem;margin:0}
+  .lede b{font-weight:600}
+  .meta{font-family:var(--mono);font-size:.8rem;color:var(--dim);margin-top:1.4rem;display:flex;flex-wrap:wrap;gap:.4rem 1.1rem}
+  .meta a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-soft)}
+  .meta a:hover{color:var(--text)}
+
+  .counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));gap:1px;background:var(--edge);border:1px solid var(--edge);margin-top:2.5rem}
+  .count{background:var(--ink);padding:1.1rem 1rem}
+  .count .n{font-family:var(--mono);font-size:1.6rem;font-weight:500;color:var(--gold);font-variant-numeric:tabular-nums;display:block;line-height:1.1}
+  .count .l{font-size:.76rem;color:var(--dim);letter-spacing:.04em;margin-top:.3rem;display:block}
+
+  section{padding-block:3.2rem 0}
+  h2{font-family:var(--display);font-weight:600;font-size:1.65rem;letter-spacing:-.01em;margin:0 0 .35rem}
+  .sec-note{color:var(--dim);font-size:.92rem;margin:0 0 1.8rem;max-width:47rem}
+
+  /* capabilities */
+  .caps{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1px;background:var(--edge);border:1px solid var(--edge)}
+  .cap{background:var(--ink);padding:1.25rem 1.2rem 1.35rem}
+  .cap h3{font-family:var(--body);font-size:.78rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--gold);margin:0 0 .3rem}
+  .cap .proof{font-size:.83rem;color:var(--dim);margin:0 0 .85rem;line-height:1.45}
+  .pills{display:flex;flex-wrap:wrap;gap:.35rem}
+  .pill{font-family:var(--mono);font-size:.72rem;padding:.22rem .5rem;border:1px solid var(--edge);color:var(--text);border-radius:2px;background:var(--surface)}
+
+  /* projects */
+  .proj{border-top:1px solid var(--edge);padding-block:1.6rem;display:grid;gap:.7rem}
+  .proj:last-child{border-bottom:1px solid var(--edge)}
+  .phead{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem}
+  .pname{font-family:var(--display);font-weight:600;font-size:1.28rem;letter-spacing:-.01em}
+  .par{font-family:var(--ar);font-size:1.05rem;color:var(--dim)}
+  .chip{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;border-radius:2px;white-space:nowrap}
+  .c-live{color:var(--live);background:var(--live-bg)}
+  .c-built{color:var(--built);background:var(--built-bg)}
+  .c-proto{color:var(--proto);background:var(--proto-bg)}
+  .pdesc{margin:0;max-width:48rem}
+  .pwhy{margin:0;max-width:48rem;color:var(--dim);font-size:.94rem}
+  .pwhy b{color:var(--text);font-weight:500}
+  .eviden{font-family:var(--mono);font-size:.76rem;color:var(--dim);display:flex;flex-wrap:wrap;gap:.35rem 1rem;font-variant-numeric:tabular-nums}
+  .eviden span::before{content:"· ";color:var(--gold-soft)}
+  .eviden span:first-child::before{content:""}
+  .plink{font-family:var(--mono);font-size:.8rem;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-soft);justify-self:start}
+  .plink:hover{color:var(--text)}
+
+  /* timeline */
+  .tl{position:relative;margin-top:.5rem;padding-left:1.6rem}
+  .tl::before{content:"";position:absolute;left:.32rem;top:.55rem;bottom:.55rem;width:1px;background:var(--edge)}
+  .tlrow{position:relative;padding-block:.75rem;display:grid;grid-template-columns:7.5rem 1fr;gap:.2rem 1.1rem}
+  .tlrow::before{content:"";position:absolute;left:-1.6rem;top:1.15rem;width:.66rem;height:.66rem;border-radius:50%;background:var(--ink);border:1.5px solid var(--gold-soft)}
+  .tlrow.key::before{background:var(--gold);border-color:var(--gold)}
+  .tldate{font-family:var(--mono);font-size:.76rem;color:var(--gold);letter-spacing:.04em;padding-top:.15rem}
+  .tltext{font-size:.95rem}
+  .tltext b{font-weight:600}
+  .tltext span{color:var(--dim)}
+  @media(max-width:32rem){.tlrow{grid-template-columns:1fr}}
+
+  .also{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.3rem 2rem;border-top:1px solid var(--edge);padding-top:1.6rem}
+  .also .an{font-weight:600;font-size:.98rem}
+  .also .ad{color:var(--dim);font-size:.88rem;margin-top:.15rem}
+
+  footer{border-top:1px solid var(--edge);margin-top:3.5rem;padding-top:1.6rem;font-family:var(--mono);font-size:.8rem;color:var(--dim);display:flex;flex-wrap:wrap;gap:.5rem 1.6rem}
+  footer a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-soft)}
+  footer a:hover{color:var(--text)}
+  a:focus-visible,.plink:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+  .langswitch{font-family:var(--mono);font-size:.78rem;margin-bottom:1rem}
+  .langswitch a{color:var(--gold);text-decoration:none;border:1px solid var(--edge);padding:.25rem .7rem;border-radius:2px}
+  .langswitch a:hover{border-color:var(--gold-soft);color:var(--text)}
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <p class="langswitch"><a href="ar/">العربية</a></p>
+    <p class="eyebrow">Build record · Ha'il, Saudi Arabia · September 2026</p>
+    <h1>Waleed AlOudah</h1>
+    <p class="sub">Arabic-first engineering — AI, payments and production systems, shipped alone.</p>
+    <p class="lede">
+      Business Administration graduate, December 2024 — no computer science background.
+      I design, build, deploy and maintain production software on my own: web, mobile, desktop,
+      payments and AI, with Arabic treated as an engineering problem rather than a translation layer.
+      <b>Every live link here was verified working on 22 September 2026.</b>
+    </p>
+    <p class="meta">
+      <a href="https://latana.sa">latana.sa</a>
+      <a href="https://w-electro.github.io">w-electro.github.io</a>
+      <a href="https://github.com/w-electro">github.com/w-electro</a>
+      <span>mrwaleed0f88@gmail.com</span>
+    </p>
+
+    <div class="counts">
+      <div class="count"><span class="n">30+</span><span class="l">projects built</span></div>
+      <div class="count"><span class="n">3</span><span class="l">live in production</span></div>
+      <div class="count"><span class="n">200k+</span><span class="l">lines written</span></div>
+      <div class="count"><span class="n">18</span><span class="l">months, self-taught</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Live and operating</h2>
+    <p class="sec-note">Reachable right now by anyone. One of them takes money.</p>
+
+    <div class="proj">
+      <div class="phead">
+        <span class="pname">La'Tana</span><span class="par">لاتانا</span>
+        <span class="chip c-live">Live · taking orders</span>
+      </div>
+      <p class="pdesc">
+        A catering and buffet marketplace for Ha'il. Customers book an event through a six-step
+        wizard; independent catering brands join as partners, and the platform handles the customer,
+        the payment and the schedule, taking commission on each order.
+      </p>
+      <p class="pwhy">
+        <b>The hard part:</b> three payment providers running live — Moyasar for mada and Apple Pay,
+        Tabby and Tamara for instalments — with a full authorise → capture → settle flow. Saudi
+        regulatory reality is modelled in the database rather than bolted on afterwards: partner
+        commission splits with IBAN settlement, Balady food-licence and civil-defence document gates,
+        and Ministry of Commerce e-commerce intermediary disclosure fields.
+      </p>
+      <div class="eviden">
+        <span>570 commits</span><span>~32,000 lines</span><span>Apr–Aug 2026</span>
+        <span>25 SQL migrations</span><span>707 users / 4,306 events in one month</span>
+      </div>
+      <a class="plink" href="https://latana.sa">latana.sa →</a>
+    </div>
+
+    <div class="proj">
+      <div class="phead">
+        <span class="pname">Athr</span><span class="par">أثر</span>
+        <span class="chip c-live">Live</span>
+      </div>
+      <p class="pdesc">
+        A heritage guide for the Ha'il region. Point a phone camera at a petroglyph or a historic
+        building and it identifies the site, narrates its story in any of 29 languages, and builds a
+        weather-aware itinerary.
+      </p>
+      <p class="pwhy">
+        <b>The hard part:</b> recognition runs entirely inside the visitor's browser — DINOv3 vision
+        embeddings in ONNX, matched by cosine similarity against a reference index built offline.
+        Embedding retrieval was chosen over a classifier on purpose, so adding a new site means adding
+        photographs instead of retraining a model. The acceptance threshold was measured against 198
+        positive and 53 negative images rather than guessed, and a model-fingerprint check refuses a
+        mismatched index instead of silently returning nonsense. No server, no per-user cost.
+      </p>
+      <div class="eviden">
+        <span>44 commits</span><span>~10,000 lines</span><span>29 translated locales</span>
+        <span>12 test suites</span><span>Sept 2026</span>
+      </div>
+      <a class="plink" href="https://w-electro.github.io/athr/">w-electro.github.io/athr →</a>
+    </div>
+
+    <div class="proj">
+      <div class="phead">
+        <span class="pname">W For Electronic Services</span>
+        <span class="chip c-live">Live</span>
+      </div>
+      <p class="pdesc">
+        An Arabic student and business services platform — graduation projects, presentations and
+        programming work — fronted by around fifteen genuinely free browser tools (OCR, PDF merge and
+        split, QR and barcode generation, background removal) that act as the acquisition channel.
+      </p>
+      <p class="pwhy">
+        <b>The hard part:</b> sustaining it. Eight months of continuous commits with a real
+        branch-and-pull-request workflow, Arabic RTL and SEO handled properly throughout, and a
+        migration from hand-written static pages toward a typed Next.js and Supabase platform. It also
+        carries a working Supabase-backed café ordering system with separate customer and barista screens.
+      </p>
+      <div class="eviden">
+        <span>334 commits</span><span>~54,000 lines</span><span>156 files</span>
+        <span>100+ merged pull requests</span><span>Apr–Dec 2025</span>
+      </div>
+      <a class="plink" href="https://w-electro.github.io">w-electro.github.io →</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>What I can build</h2>
+    <p class="sec-note">
+      Each of these is backed by something shipped, not by a course certificate. The proof line names
+      where it was actually used.
+    </p>
+    <div class="caps">
+      <div class="cap">
+        <h3>Web applications</h3>
+        <p class="proof">Three live sites, ~86,000 lines. Arabic RTL and SEO throughout.</p>
+        <div class="pills"><span class="pill">TypeScript</span><span class="pill">React</span><span class="pill">Next.js</span><span class="pill">Vite</span><span class="pill">Tailwind</span><span class="pill">Vanilla JS</span><span class="pill">PWA</span><span class="pill">Service workers</span></div>
+      </div>
+      <div class="cap">
+        <h3>Backend &amp; data</h3>
+        <p class="proof">Serverless APIs in production; 36-model and 8-model schemas designed and migrated.</p>
+        <div class="pills"><span class="pill">Node / Express</span><span class="pill">FastAPI</span><span class="pill">Python</span><span class="pill">PostgreSQL</span><span class="pill">Supabase</span><span class="pill">Prisma</span><span class="pill">Redis</span><span class="pill">Socket.IO</span><span class="pill">Docker</span></div>
+      </div>
+      <div class="cap">
+        <h3>Payments &amp; Saudi compliance</h3>
+        <p class="proof">Live money through three providers, with licensing rules modelled in schema.</p>
+        <div class="pills"><span class="pill">Moyasar</span><span class="pill">Tabby</span><span class="pill">Tamara</span><span class="pill">Stripe</span><span class="pill">Authorise / capture / settle</span><span class="pill">IBAN splits</span><span class="pill">Balady gates</span><span class="pill">MoC disclosure</span></div>
+      </div>
+      <div class="cap">
+        <h3>AI engineering</h3>
+        <p class="proof">Vision models in-browser; OCR-plus-LLM extraction over five years of documents.</p>
+        <div class="pills"><span class="pill">Anthropic API</span><span class="pill">OpenAI API</span><span class="pill">ONNX / Transformers.js</span><span class="pill">Retrieval before generation</span><span class="pill">Google Cloud Vision</span><span class="pill">Structured extraction</span><span class="pill">Provider failover</span></div>
+      </div>
+      <div class="cap">
+        <h3>Mobile &amp; desktop</h3>
+        <p class="proof">Native Android app; nine signed desktop releases with a working auto-updater.</p>
+        <div class="pills"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">React Native</span><span class="pill">Expo</span><span class="pill">Electron</span><span class="pill">electron-builder</span><span class="pill">WebRTC</span><span class="pill">PyInstaller</span></div>
+      </div>
+      <div class="cap">
+        <h3>Arabic-first engineering</h3>
+        <p class="proof">The specialism. RTL, Arabic OCR, Arabic date and accounting normalisation.</p>
+        <div class="pills"><span class="pill">RTL interfaces</span><span class="pill">Arabic OCR</span><span class="pill">Arabic-numeral dates</span><span class="pill">MSA + Najdi dialect</span><span class="pill">Bilingual content systems</span><span class="pill">Arabic SEO</span></div>
+      </div>
+      <div class="cap">
+        <h3>Automation &amp; documents</h3>
+        <p class="proof">Five years of scanned contracts turned into one structured dataset.</p>
+        <div class="pills"><span class="pill">Power Query / M</span><span class="pill">Excel automation</span><span class="pill">pandas</span><span class="pill">openpyxl</span><span class="pill">PDF pipelines</span><span class="pill">Batch OCR</span></div>
+      </div>
+      <div class="cap">
+        <h3>Quantitative</h3>
+        <p class="proof">A trading engine with real statistics behind it — paper stage, no returns claimed.</p>
+        <div class="pills"><span class="pill">NumPy / pandas</span><span class="pill">statsmodels</span><span class="pill">Hurst exponent</span><span class="pill">ADF testing</span><span class="pill">Ornstein-Uhlenbeck</span><span class="pill">Kelly sizing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional work — Ldonk International</h2>
+    <p class="sec-note">
+      Hired as an accountant, July–November 2025. Built the following unasked, well outside the job
+      description. Client data is confidential and appears nowhere.
+    </p>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">Arabic contract digitisation pipeline</span><span class="chip c-built">Deployed internally</span></div>
+      <p class="pdesc">
+        Five years of scanned Arabic contracts turned into one structured, formula-driven dataset.
+        Three stages: Google Cloud Vision OCR over rendered PDF pages, a language model performing
+        structured extraction, then Excel generation with live formulas and RTL formatting.
+      </p>
+      <p class="pwhy">
+        <b>The insight that makes it work:</b> a contract is not one row. It expands as a cross-product
+        of line items against payment milestones — two products across six payment terms is twelve rows,
+        not one — and every naive extraction gets this wrong, which corrupts every total downstream. The
+        extraction step also corrects Arabic OCR errors, normalises contract-number formats, matches
+        products against a reference taxonomy, and rejects any result whose payment percentages don't
+        sum to one.
+      </p>
+      <div class="eviden">
+        <span>134 contract PDFs processed</span><span>100 contracts structured, up from 23 done by hand</span>
+        <span>34 companies · 38 projects cross-referenced</span>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">Receivables aging engine</span><span class="chip c-built">Deployed internally</span></div>
+      <p class="pdesc">
+        A Power Query engine that ingests a folder of Arabic CSV exports and produces aging analysis
+        across client accounts.
+      </p>
+      <p class="pwhy">
+        <b>Why it isn't wizard output:</b> roughly 54,000 characters of hand-written M. It classifies
+        every row by type, parses Arabic-numeral dates across several inconsistent formats, and solves
+        the genuinely awkward problem of separating document numbers from running balances from actual
+        amounts using transaction-type heuristics, with per-row error capture.
+      </p>
+      <div class="eviden"><span>~54,000 characters of M</span><span>22 worksheets generated</span></div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">Inventory processor</span><span class="chip c-built">Packaged desktop app</span></div>
+      <p class="pdesc">
+        An Electron application that reads Word inventory tables, categorises stock and runs a
+        panel-to-door allocation optimisation with a breakdown view. Packaged and installed as a
+        Windows executable, alongside a companion door calculator.
+      </p>
+      <div class="eviden"><span>Electron + electron-builder</span><span>Shipped as .exe to colleagues</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Built, not deployed</h2>
+    <p class="sec-note">
+      Real systems that run but were never put in front of users — stated plainly, because the
+      engineering in several of them is the strongest work here.
+    </p>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">Rally</span><span class="chip c-built">Nine releases built</span></div>
+      <p class="pdesc">
+        A desktop community app for gamers — servers and voice channels, feeds, streaming, channel
+        points and a marketplace, delivered as a Windows application.
+      </p>
+      <p class="pwhy">
+        <b>The rare part:</b> nine signed, incrementing installers from v1.0.0 to v1.6.1 with a working
+        auto-update feed. Most projects never produce a second version, because a release pipeline is
+        invisible work nobody applauds. The voice layer is a hand-rolled WebRTC mesh with push-to-talk
+        and spatial positioning, not a hosted SDK. Built in thirteen days.
+      </p>
+      <div class="eviden">
+        <span>124 commits in 13 days</span><span>~26,800 lines</span><span>36-model schema</span>
+        <span>Electron + React + Socket.IO + Redis</span>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">Najah</span><span class="par">نجاح</span><span class="chip c-built">Web live · Android debug build</span></div>
+      <p class="pdesc">
+        A Saudi student services platform with an Arabic-first AI tutor and around sixty browser
+        utilities, built twice over — as a Next.js web app and as a native Android app — with a separate
+        Python OCR microservice behind both.
+      </p>
+      <p class="pwhy">
+        <b>Product thinking, not a wrapper:</b> the tutor's instructions encode Saudi educational
+        context, Modern Standard Arabic with Najdi dialect comprehension, LaTeX maths output, and an
+        explicit refusal to write a student's homework for them.
+      </p>
+      <div class="eviden">
+        <span>~27,000 lines</span><span>15,385 TypeScript · 11,710 Kotlin</span>
+        <span>Next.js + Supabase</span><span>Jetpack Compose</span><span>Flask + Google Vision</span>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">KAWI</span><span class="chip c-proto">Paper stage</span></div>
+      <p class="pdesc">
+        A Shariah-compliant algorithmic trading engine for Tadawul and US equities, with a FastAPI
+        backend and a React dashboard.
+      </p>
+      <p class="pwhy">
+        <b>The statistics are real; the track record is not.</b> Hurst exponent, ADF stationarity
+        testing and Ornstein-Uhlenbeck half-life estimation drive the mean-reversion logic, with
+        portfolio Kelly sizing and a genuine halal screening rule engine — debt-to-asset limits, sector
+        exclusion, no swap instruments, minimum holding period. It has never traded live and no backtest
+        results exist, so no performance figures are claimed.
+      </p>
+      <div class="eviden"><span>~13,700 lines</span><span>Python + FastAPI + React</span><span>Interactive Brokers API</span></div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">Responza</span><span class="chip c-built">Backend complete</span></div>
+      <p class="pdesc">
+        A multi-channel AI customer service backend for Saudi schools and small businesses — web chat
+        and WhatsApp, with a per-organisation knowledge base.
+      </p>
+      <p class="pwhy">
+        <b>Built against the real API:</b> it talks to Meta's Graph API directly, with dedicated
+        services for WhatsApp's template approval and throughput limits — constraints you only handle if
+        you've actually read the platform rules. Retrieval runs before generation, with a confidence
+        score and automatic provider failover. Never deployed to production.
+      </p>
+      <div class="eviden"><span>~4,500 lines TypeScript</span><span>Prisma + Postgres + Redis</span><span>Docker + nginx</span></div>
+    </div>
+
+    <div class="proj">
+      <div class="phead"><span class="pname">FHIR study platform</span><span class="chip c-proto">Weeks 1–4 complete</span></div>
+      <p class="pdesc">
+        A bilingual twenty-six-week curriculum application, built from scratch to teach myself the HL7
+        FHIR healthcare interoperability standard to certification depth.
+      </p>
+      <p class="pwhy">
+        <b>Stated precisely:</b> evidence of domain study, not of FHIR implementation experience. The
+        finished weeks cover the FHIR metamodel, RESTful principles and medication resource semantics
+        accurately. Later weeks are unwritten.
+      </p>
+      <div class="eviden"><span>Offline-capable, English + Arabic</span><span>Python content pipeline</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How I got here</h2>
+    <p class="sec-note">Eighteen months, in order.</p>
+    <div class="tl">
+      <div class="tlrow key">
+        <div class="tldate">Dec 2024</div>
+        <div class="tltext"><b>Graduated</b> — Business Administration, Accounting. <span>University of Ha'il. No programming background at this point.</span></div>
+      </div>
+      <div class="tlrow">
+        <div class="tldate">Apr 2025</div>
+        <div class="tltext"><b>First commits.</b> <span>Started W For Electronic Services — static Arabic pages and free browser tools, taught myself in public.</span></div>
+      </div>
+      <div class="tlrow key">
+        <div class="tldate">Jul–Nov 2025</div>
+        <div class="tltext"><b>Accountant at Ldonk International.</b> <span>Built the OCR-plus-LLM contract pipeline, the Power Query aging engine and two desktop tools — none of it in my job description. Left when the ceiling became visible.</span></div>
+      </div>
+      <div class="tlrow">
+        <div class="tldate">Nov–Dec 2025</div>
+        <div class="tltext"><b>Went deep.</b> <span>KAWI's quant engine, the Najah platform across web and Android, and the FHIR curriculum — learning healthcare interoperability by building the course I wanted to take.</span></div>
+      </div>
+      <div class="tlrow">
+        <div class="tldate">Feb 2026</div>
+        <div class="tltext"><b>Rally.</b> <span>124 commits and nine signed desktop releases in thirteen days.</span></div>
+      </div>
+      <div class="tlrow key">
+        <div class="tldate">Apr–Aug 2026</div>
+        <div class="tltext"><b>La'Tana goes live.</b> <span>570 commits. Real customers, real payments, three providers, a partner marketplace with commission settlement.</span></div>
+      </div>
+      <div class="tlrow key">
+        <div class="tldate">Sept 2026</div>
+        <div class="tltext"><b>Athr.</b> <span>A vision model running in the browser, narrating Ha'il's heritage in 29 languages. Built for the AJA AI hackathon.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Also built</h2>
+    <p class="sec-note">Smaller or earlier, working to varying degrees.</p>
+    <div class="also">
+      <div><div class="an">Latana-ios</div><div class="ad">Native Expo client running against the live La'Tana API. Complete flow, never submitted to the stores.</div></div>
+      <div><div class="an">Ekhtlfna · اختلفنا</div><div class="ad">Real-time Arabic social deduction party game. Full socket game loop written from scratch.</div></div>
+      <div><div class="an">ShaySukar · شاي سكر</div><div class="ad">QR menu and live barista order board for a Ha'il tea shop.</div></div>
+      <div><div class="an">Business Financial Monitor</div><div class="ad">Watches a folder of Excel exports and refreshes analytics, translating Arabic accounting headers. Shipped as an executable.</div></div>
+      <div><div class="an">Flow</div><div class="ad">Arabic ebook production pipeline — generation through typesetting and cover art. 95 PDFs produced.</div></div>
+      <div><div class="an">SME lead finder</div><div class="ad">FastAPI pipeline tracker for Saudi SME leads. The CRM works; the scraping layer does not.</div></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Waleed AlOudah · Ha'il, Saudi Arabia</span>
+    <a href="https://github.com/w-electro">github.com/w-electro</a>
+    <a href="https://latana.sa">latana.sa</a>
+    <span>mrwaleed0f88@gmail.com</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
