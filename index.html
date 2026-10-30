@@ -140,14 +140,14 @@
 
   <header class="top">
     <p class="langswitch"><a href="ar/">العربية</a></p>
-    <p class="eyebrow">Build record · Ha'il, Saudi Arabia · September 2026</p>
+    <p class="eyebrow">Build record · Ha'il, Saudi Arabia · October 2026</p>
     <h1>Waleed AlOudah</h1>
     <p class="sub">Arabic-first engineering — AI, payments and production systems, shipped alone.</p>
     <p class="lede">
       Business Administration graduate, December 2024 — no computer science background.
       I design, build, deploy and maintain production software on my own: web, mobile, desktop,
       payments and AI, with Arabic treated as an engineering problem rather than a translation layer.
-      <b>Every live link here was verified working on 22 September 2026.</b>
+      <b>Every live link here was verified working on 30 October 2026.</b>
     </p>
     <p class="meta">
       <a href="https://latana.sa">latana.sa</a>
@@ -160,7 +160,7 @@
       <div class="count"><span class="n">30+</span><span class="l">projects built</span></div>
       <div class="count"><span class="n">3</span><span class="l">live in production</span></div>
       <div class="count"><span class="n">200k+</span><span class="l">lines written</span></div>
-      <div class="count"><span class="n">18</span><span class="l">months, self-taught</span></div>
+      <div class="count"><span class="n">19</span><span class="l">months, self-taught</span></div>
     </div>
   </header>
 
@@ -176,7 +176,8 @@
       <p class="pdesc">
         A catering and buffet marketplace for Ha'il. Customers book an event through a six-step
         wizard; independent catering brands join as partners, and the platform handles the customer,
-        the payment and the schedule, for a flat monthly subscription instead of a commission on each order.
+        the payment and the schedule, for a flat monthly subscription instead of a commission on each order. Since October 2026 it also has two native SwiftUI
+        iPhone apps — customer and partner — sharing a five-stage order tracker with the website.
       </p>
       <p class="pwhy">
         <b>The hard part:</b> three payment providers running live — Moyasar for mada and Apple Pay,
@@ -186,7 +187,7 @@
       </p>
       <div class="eviden">
         <span>570 commits</span><span>~32,000 lines</span><span>Apr–Aug 2026</span>
-        <span>25 SQL migrations</span><span>707 users / 4,306 events in one month</span>
+        <span>25 SQL migrations</span><span>707 users / 4,306 events in one month</span><span>2 native SwiftUI iPhone apps</span>
       </div>
       <figure class="shot"><img src="img/latana.jpg" alt="La'Tana booking site" loading="lazy" width="1100" height="739"><figcaption class="shotcap">latana.sa — live, with the Ha'il geo-gate visible at the foot</figcaption></figure>
       <a class="plink" href="https://latana.sa">latana.sa →</a>
@@ -209,10 +210,13 @@
         photographs instead of retraining a model. The acceptance threshold was measured against 198
         positive and 53 negative images rather than guessed, and a model-fingerprint check refuses a
         mismatched index instead of silently returning nonsense. No server, no per-user cost.
+        In October 2026 I used Athr's verified site data to test ALLaM-7B, the Saudi Arabic LLM: on its
+        own it got 7 of 14 numeric heritage facts right, with confident inventions; grounded in Athr's
+        data it got 24 of 24.
       </p>
       <div class="eviden">
         <span>44 commits</span><span>~10,000 lines</span><span>29 translated locales</span>
-        <span>12 test suites</span><span>Sept 2026</span>
+        <span>12 test suites</span><span>ALLaM-7B: 7/14 alone → 24/24 grounded</span><span>Sept–Oct 2026</span>
       </div>
       <figure class="shot shot--tall"><img src="img/athr.jpg" alt="Athr language picker" loading="lazy" width="407" height="860"><figcaption class="shotcap">athr — the 29-language picker, before the camera opens</figcaption></figure>
       <a class="plink" href="https://w-electro.github.io/athr/">w-electro.github.io/athr →</a>
@@ -267,13 +271,13 @@
       </div>
       <div class="cap">
         <h3>AI engineering</h3>
-        <p class="proof">Vision models in-browser; OCR-plus-LLM extraction over five years of documents.</p>
-        <div class="pills"><span class="pill">Anthropic API</span><span class="pill">OpenAI API</span><span class="pill">ONNX / Transformers.js</span><span class="pill">Retrieval before generation</span><span class="pill">Google Cloud Vision</span><span class="pill">Structured extraction</span><span class="pill">Provider failover</span></div>
+        <p class="proof">Vision models in-browser; OCR-plus-LLM extraction over five years of documents; ALLaM-7B tested on 24 verified heritage facts.</p>
+        <div class="pills"><span class="pill">Anthropic API</span><span class="pill">OpenAI API</span><span class="pill">LLM evaluation</span><span class="pill">ONNX / Transformers.js</span><span class="pill">Retrieval before generation</span><span class="pill">Google Cloud Vision</span><span class="pill">Structured extraction</span><span class="pill">Provider failover</span></div>
       </div>
       <div class="cap">
         <h3>Mobile &amp; desktop</h3>
-        <p class="proof">Native Android app; nine signed desktop releases with a working auto-updater.</p>
-        <div class="pills"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">React Native</span><span class="pill">Expo</span><span class="pill">Electron</span><span class="pill">electron-builder</span><span class="pill">WebRTC</span><span class="pill">PyInstaller</span></div>
+        <p class="proof">Two native SwiftUI iPhone apps and a native Android app; nine signed desktop releases with a working auto-updater.</p>
+        <div class="pills"><span class="pill">SwiftUI</span><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">React Native</span><span class="pill">Expo</span><span class="pill">Electron</span><span class="pill">electron-builder</span><span class="pill">WebRTC</span><span class="pill">PyInstaller</span></div>
       </div>
       <div class="cap">
         <h3>Arabic-first engineering</h3>
@@ -355,6 +359,21 @@
     </p>
 
     <div class="proj">
+      <div class="phead"><span class="pname">OUTA ERP</span><span class="chip c-built">Built · pre-launch</span></div>
+      <p class="pdesc">
+        Point of sale and back office for OUTA, my own specialty coffee brand — 14 apps across 28
+        screens in Arabic and English, with per-employee PIN login.
+      </p>
+      <p class="pwhy">
+        <b>It doubles as the business plan:</b> the café's feasibility study takes its financials from a
+        day-by-day simulation run through the real ERP — tens of thousands of simulated orders over
+        24 months — instead of a spreadsheet guess. POS receipts carry a ZATCA Phase-1 QR code; reads
+        are role-checked, PINs are hashed, and repeated failed logins are locked out.
+      </p>
+      <div class="eviden"><span>Node + Express + SQLite</span><span>React + Vite</span><span>14 apps · 28 screens</span><span>7/7 tests</span><span>Oct 2026</span></div>
+    </div>
+
+    <div class="proj">
       <div class="phead"><span class="pname">Rally</span><span class="chip c-built">Nine releases built</span></div>
       <p class="pdesc">
         A desktop community app for gamers — servers and voice channels, feeds, streaming, channel
@@ -373,11 +392,12 @@
     </div>
 
     <div class="proj">
-      <div class="phead"><span class="pname">Najah</span><span class="par">نجاح</span><span class="chip c-built">Web live · Android debug build</span></div>
+      <div class="phead"><span class="pname">Najah</span><span class="par">نجاح</span><span class="chip c-built">Web live · Android + iOS dev builds</span></div>
       <p class="pdesc">
         A Saudi student services platform with an Arabic-first AI tutor and around sixty browser
         utilities, built twice over — as a Next.js web app and as a native Android app — with a separate
-        Python OCR microservice behind both.
+        Python OCR microservice behind both. In October 2026 a third build followed: a native SwiftUI
+        iPhone app with offline OCR, scan-to-PDF and PDF tools.
       </p>
       <p class="pwhy">
         <b>Product thinking, not a wrapper:</b> the tutor's instructions encode Saudi educational
@@ -438,7 +458,7 @@
 
   <section>
     <h2>How I got here</h2>
-    <p class="sec-note">Eighteen months, in order.</p>
+    <p class="sec-note">Nineteen months, in order.</p>
     <div class="tl">
       <div class="tlrow key">
         <div class="tldate">Dec 2024</div>
@@ -468,6 +488,10 @@
         <div class="tldate">Sept 2026</div>
         <div class="tltext"><b>Athr.</b> <span>A vision model running in the browser, narrating Ha'il's heritage in 29 languages. Built for the AJA AI hackathon.</span></div>
       </div>
+      <div class="tlrow key">
+        <div class="tldate">Oct 2026</div>
+        <div class="tltext"><b>Native iOS, and a test of ALLaM.</b> <span>Two SwiftUI iPhone apps for La'Tana and a third Najah build; ALLaM-7B scored against Athr's verified data; the OUTA ERP built end to end.</span></div>
+      </div>
     </div>
   </section>
 
@@ -475,7 +499,7 @@
     <h2>Also built</h2>
     <p class="sec-note">Smaller or earlier, working to varying degrees.</p>
     <div class="also">
-      <div><div class="an">Latana-ios</div><div class="ad">Native Expo client running against the live La'Tana API. Complete flow, never submitted to the stores.</div></div>
+      <div><div class="an">Latana-ios (Expo)</div><div class="ad">The first Expo client against the live La'Tana API — since replaced by the two native SwiftUI apps.</div></div>
       <div><div class="an">Ekhtlfna · اختلفنا</div><div class="ad">Real-time Arabic social deduction party game. Full socket game loop written from scratch.</div></div>
       <div><div class="an">ShaySukar · شاي سكر</div><div class="ad">QR menu and live barista order board for a Ha'il tea shop.</div></div>
       <div><div class="an">Business Financial Monitor</div><div class="ad">Watches a folder of Excel exports and refreshes analytics, translating Arabic accounting headers. Shipped as an executable.</div></div>
